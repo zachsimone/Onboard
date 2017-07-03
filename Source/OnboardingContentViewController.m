@@ -121,7 +121,7 @@ NSString * const kOnboardActionButtonAccessibilityIdentifier = @"OnboardActionBu
     self.actionButton.accessibilityIdentifier = kOnboardActionButtonAccessibilityIdentifier;
     self.actionButton.titleLabel.font = [UIFont fontWithName:kDefaultOnboardingFont size:kDefaultButtonFontSize];
     [self.actionButton setTitle:buttonText forState:UIControlStateNormal];
-    [self.actionButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.actionButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [self.actionButton addTarget:self action:@selector(handleButtonPressed) forControlEvents:UIControlEventTouchUpInside];
 
     self.buttonActionHandler = actionBlock ?: ^(OnboardingViewController *controller){};
